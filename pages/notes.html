@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Note Page</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="subheader-tabs">
+    <button class="tab-button" data-tab="section1">Section 1</button>
+    <button class="tab-button" data-tab="section2">Section 2</button>
+    <button class="tab-button" data-tab="section3">Section 3</button>
+  </div>
+
+  <div class="add-button">+</div>
+
+  <div id="list-container">
+    <div class="list" id="section1"></div>
+    <div class="list" id="section2" style="display:none"></div>
+    <div class="list" id="section3" style="display:none"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+  <script src="../firebase-config.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

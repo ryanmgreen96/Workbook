@@ -1,0 +1,77 @@
+body {
+  background-color: #440000;
+  color: #FFD700;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.page-list li {
+  margin: 10px 0;
+}
+
+.page-list a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.subheader-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: Georgia;
+}
+
+.add-button {
+  position: fixed;
+  left: 10px;
+  top: 100px;
+  font-size: 30px;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+.list {
+  padding: 20px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-row input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.input-row input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FFD700;
+  color: #fffacd;
+  font-size: 1em;
+  flex: 1;
+  padding: 5px;
+}
