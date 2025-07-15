@@ -4,26 +4,43 @@
   <meta charset="UTF-8" />
   <title>Note Page</title>
   <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <div class="subheader-tabs">
-    <button class="tab-button" data-tab="section1">Section 1</button>
-    <button class="tab-button" data-tab="section2">Section 2</button>
-    <button class="tab-button" data-tab="section3">Section 3</button>
+<div class="top-bar">
+  <div class="subheader-tabs" id="subheader-tabs">
+    <button class="tab-button" data-tab="section1">
+      <input type="text" value="Section 1" class="tab-input" />
+    </button>
+    <button class="tab-button" data-tab="section2">
+      <input type="text" value="Section 2" class="tab-input" />
+    </button>
+    <button class="tab-button" data-tab="section3">
+      <input type="text" value="Section 3" class="tab-input" />
+    </button>
   </div>
+  <button class="add-tab-button" title="Add Tab">//</button>
+</div>
 
-  <div class="add-button">+</div>
+<!-- Wrap these two side-by-side -->
+<div class="main-content-wrapper">
+  <div class="button-bar">
+    <a href="../index.html" class="nav-button" title="Home">🏠</a>
+    <div class="nav-button add-button" title="Add Item">+</div>
+    <div class="nav-button remove-button" title="Remove Item">−</div>
+  </div>
 
   <div id="list-container">
     <div class="list" id="section1"></div>
     <div class="list" id="section2" style="display:none"></div>
     <div class="list" id="section3" style="display:none"></div>
   </div>
+</div>
+
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
-  <script src="../firebase-config.js"></script>
-  <script src="../script.js"></script>
+<script type="module" src="../script.js"></script>
+
+
 </body>
 </html>
